@@ -20,7 +20,9 @@ include 'doc-examples:jdbc-example-java'
 //include 'doc-examples:jdbc-example-kotlin'
 
 // benchmarks
+/*
 include 'benchmarks:benchmark-predator'
 include 'benchmarks:benchmark-predator-jdbc'
 include 'benchmarks:benchmark-spring-data'
 include 'benchmarks:benchmark-gorm-hibernate'
+*/
