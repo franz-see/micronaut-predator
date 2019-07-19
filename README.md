@@ -1,7 +1,7 @@
 # Micronaut Predator
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.micronaut.data/micronaut-predator-model.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.micronaut.data%22%20AND%20a:%22micronaut-predator-model%22)
-[![Build Status](https://travis-ci.org/micronaut-projects/micronaut-predator.svg?branch=master)](https://travis-ci.org/micronaut-projects/micronaut-predator)
+[![Build Status](https://travis-ci.org/micronaut-projects/micronaut-predator.svg?branch=master)](https://travis-ci.org/franz-see/micronaut-predator)
 
 Micronaut Predator (short for **Pre**computed **Da**ta Reposi**tor**ies) is a database access toolkit that uses Ahead of Time (AoT) compilation to pre-compute queries for repository interfaces that are then executed by a thin, lightweight runtime layer.
 
