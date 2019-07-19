@@ -48,7 +48,7 @@ if [[ $EXIT_STATUS -eq 0 ]]; then
       echo "Build archives only (no publishing)"
       ./gradlew --stop
      if [[ -n $TRAVIS_TAG ]]; then
-         ./gradlew bintrayUpload --no-daemon --stacktrace || EXIT_STATUS=$?
+         ./gradlew build --no-daemon --stacktrace || EXIT_STATUS=$?
         if [[ $EXIT_STATUS -eq 0 ]]; then
           ./gradlew synchronizeWithMavenCentral --no-daemon
         fi
