@@ -46,7 +46,7 @@ subprojects { Project subproject ->
 
 
     version project.projectVersion
-    group "io.micronaut.data"
+    group "ph.net.see.io.micronaut.data"
     ext {
         isConfiguration = subproject.projectDir.parentFile.name == 'configurations'
         isBuildSnapshot = version.toString().endsWith("-SNAPSHOT")
