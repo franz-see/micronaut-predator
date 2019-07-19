@@ -45,7 +45,7 @@ if [[ $EXIT_STATUS -eq 0 ]]; then
     echo "Publishing archives for branch $TRAVIS_BRANCH"
     if [[ -n $TRAVIS_TAG ]] || [[ $TRAVIS_BRANCH =~ ^master$ && $TRAVIS_PULL_REQUEST == 'false' ]]; then
 
-      echo "Publishing archives"
+      echo "Build archives only (no publishing)"
       ./gradlew --stop
      if [[ -n $TRAVIS_TAG ]]; then
          ./gradlew bintrayUpload --no-daemon --stacktrace || EXIT_STATUS=$?
@@ -53,7 +53,7 @@ if [[ $EXIT_STATUS -eq 0 ]]; then
           ./gradlew synchronizeWithMavenCentral --no-daemon
         fi
      else
-         ./gradlew publish --no-daemon --stacktrace || EXIT_STATUS=$?
+         ./gradlew build --no-daemon --stacktrace || EXIT_STATUS=$?
      fi
 
       if [[ $EXIT_STATUS -eq 0 ]]; then
