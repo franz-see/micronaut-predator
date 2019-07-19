@@ -80,12 +80,7 @@ publishing {
                 username = ossUser
                 password = ossPass
             }
-            if(isBuildSnapshot) {
-                url  "https://oss.sonatype.org/content/repositories/snapshots"
-            }
-            else {
-                url "https://repo.micronaut.io/artifactory/libs-releases-local"
-            }
+            url "https://api.bintray.com/maven/franz-see/maven-repo/micronaut-predator/;publish=1"
         }
     }
 
